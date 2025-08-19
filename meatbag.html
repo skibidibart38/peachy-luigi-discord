@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Meatbag Player</title>
+    <title>Meatbag Audio</title>
     <style>
         body {
             display: flex;
@@ -22,21 +22,9 @@
 </head>
 <body>
     <img src="meatbag.png" alt="Meatbag Cover">
-
     <audio autoplay loop>
-        <source src="meatbag.mp3" type="audio/mpeg">
+        <source src="https://github.com/skibidibart38/peachy-luigi-discord/raw/refs/heads/main/meatbag.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
     </audio>
-
-    <script>
-        const audio = document.querySelector('audio');
-        audio.volume = 1; // full volume
-
-        // Some browsers require user interaction to start audio
-        document.addEventListener('DOMContentLoaded', () => {
-            audio.play().catch(() => {
-                console.log("Autoplay blocked, user may need to interact with the page");
-            });
-        });
-    </script>
 </body>
 </html>
